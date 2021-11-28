@@ -1,0 +1,20 @@
+
+.grid-main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.container {
+  margin-top: 1px;
+}
+
+
+@media only screen and (min-width:250px) and (max-width:768px) {
+
+  .grid-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+
