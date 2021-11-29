@@ -3,7 +3,7 @@
   <hr class="text-white">
   <ul class="nav flex-column">
     <li class="list-group list-reset" *ngFor="let item of itemsDashboard">
-      <a class="list-group-item list-group-item-action" aria-current="page" href="#">
+      <a class="list-group-item list-group-item-action" aria-current="page" (click)="getGifs(item)">
         {{item | titlecase}}
       </a>
     </li>
