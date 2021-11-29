@@ -1,0 +1,8 @@
+<div class="flex-container">
+  <div class="card" style="width: 18rem;" *ngFor="let gif of resultados">
+    <img [src]='gif.images.downsized_medium.url' class="card-img-top" [alt]='gif.title'>
+    <div class="card-body">
+      <h5 class="card-title"> {{gif.title}}  </h5>
+    </div>
+  </div>
+</div>
